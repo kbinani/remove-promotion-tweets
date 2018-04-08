@@ -1,0 +1,16 @@
+{
+	"name": "Collect Twitter promotion accounts",
+	"version": "0.0.0",
+	"manifest_version": 2,
+	"description": "Collect Twitter promotion accounts",
+	"permissions": [
+		"storage"
+	],
+	"options_page": "options.html",
+	"content_scripts": [
+		{
+			"matches": ["https://twitter.com/*"],
+			"js": ["jquery-3.3.1.min.js", "main.js"]
+		}
+	]
+}
